@@ -5,23 +5,25 @@
     </head>
     <body>
         <div id='container'>
-            <div id='display'></div>
+            <div id='display'>
+                <p id='display-p'>0</p>
+            </div>
             <div id='top-buttons' class='button-container'>
                 <button class='num-button double-sized'>C</button>
-                <button class='num-button'>%</button>
-                <button class='num-button'>X</button>
+                <button class='function-button' id='divide'>%</button>
+                <button class='function-button' id='multiply'>X</button>
             </div>
             <div id='second-buttons' class='button-container'>
                 <button class='num-button'>7</button>
                 <button class='num-button'>8</button>
                 <button class='num-button'>9</button>
-                <button class='num-button'>+</button>
+                <button class='function-button' id='add'>+</button>
             </div>
             <div id='third-butons' class='button-container'>
                 <button class='num-button'>4</button>
                 <button class='num-button'>5</button>
                 <button class='num-button'>6</button>
-                <button class='num-button'>-</button>
+                <button class='function-button' id='subtract'>-</button>
             </div>
             <div id='bottom-buttons'>
                 <div id='left-container' class='button-container'>
@@ -36,7 +38,7 @@
                     </div>
                 </div>
                 <div id='right-container' class='button-container'>
-                    <button class='num-button'>=</button>
+                    <button class='equals-button'>=</button>
                 </div>
             </div>
         </div>
