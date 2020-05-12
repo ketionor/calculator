@@ -2,10 +2,10 @@
 let operator = '';
 
 //Basic functions
-const add = (arr1, arr2) => arr1 + arr2;
-const subtract = (arr1, arr2) => arr1 - arr2;
-const multiply = (arr1, arr2) => arr1 * arr2;
-//const divide = (arr1, arr2) => arr1 + arr2;
+const add = (num1, num2) => num1 + num2;
+const subtract = (num1, num2) => num1 - num2;
+const multiply = (num1, num2) => num1 * num2;
+const divide = (num1, num2) => num1 / num2;
 
 //Button event listener
 const buttons =  document.querySelectorAll('button');
@@ -28,21 +28,30 @@ buttons.forEach(button => {
             display.innerHTML = '0';
             operator = e.target.id;
             console.log(operator);
+        } else {
+            console.log(num1, num2, operator);
+            calculate(Number(num1), Number(num2), operator);
         }
     });
 });
-
-
 
 //Calculator function
 const calculate = (num1, num2, operator) => {
     switch(operator){
         case 'add':
-            add(num1, num2);
+            ans = add(num1, num2);
+            break;
         case 'subtract':
-            subtract(num1, num2);
+            ans = subtract(num1, num2);
+            break;
         case 'multiply':
-            multiply(num1, num2);    
+            ans = multiply(num1, num2);
+            break;  
+        case 'divide':
+            ans = divide(num1, num2); 
+            break;  
     }
+    console.log(ans);
+    display.innerHTML = ans;
 
 }
