@@ -61,14 +61,6 @@ p {
     flex-grow: 3;
 }
 
-#left-top {
-    
-}
-
-#left-bottom {
-    /* margin-top: 10px; */
-}
-
 #right-container {
     flex-grow: 1;
 }
