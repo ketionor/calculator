@@ -1,0 +1,189 @@
+#container {
+  padding: .4em;
+  display: -ms-grid;
+  display: grid;
+  border: 3px solid #b1b1b1;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  grid-gap: .2em;
+      grid-template-areas: "display    display     display     display" "display    display     display     display" "clear      del         percent     multiply" "seven      eight       nine        add     " "four       five        six         subtract" "one        two         three       calc    " "zero       zero        decimal     calc    ";
+  width: 250px;
+  height: 400px;
+  background-color: mistyrose;
+  border-radius: 10px;
+}
+
+#container button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: none;
+  background-color: salmon;
+}
+
+#container #clear {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: clear;
+}
+
+#container #del {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: del;
+}
+
+#container #divide {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: percent;
+}
+
+#container #multiply {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+#container #seven {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+#container #eight {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+#container #nine {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+#container #add {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: add;
+}
+
+#container #four {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#container #five {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#container #six {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+#container #subtract {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: subtract;
+}
+
+#container #one {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#container #two {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#container #three {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#container #zero {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+#container #decimal-point {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: decimal;
+}
+
+#container #calculate {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: calc;
+}
+
+#display {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: display;
+  border: 5px;
+  background-color: lightgray;
+  margin: 10px 10px 10px 10px;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: right;
+  border-radius: 10px;
+}
+
+#left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+#right-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 5px;
+  background-color: lightsteelblue;
+  width: 50px;
+  height: 50px;
+  font-size: large;
+}
+
+.equals-button {
+  height: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
