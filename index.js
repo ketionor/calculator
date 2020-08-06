@@ -128,26 +128,24 @@ const calculate = (num1, num2, operator) => {
     } else { 
         switch(operator) {
         case 'add':
-            ans = add(num1, num2);
-            display.innerHTML = ans.toPrecision(8);
+            ans = add(num1, num2).toPrecision(8);
+            display.innerHTML = parseFloat(ans);
             break;
         case 'subtract':
-            ans = subtract(num1, num2);
-            display.innerHTML = ans.toPrecision(8);
+            ans = subtract(num1, num2).toPrecision(8);
+            display.innerHTML = parseFloat(ans);
             break;
         case 'multiply':
-            ans = multiply(num1, num2);
-            display.innerHTML = ans.toPrecision(8);
+            ans = multiply(num1, num2).toPrecision(8);
+            display.innerHTML = parseFloat(ans);
             break;  
         case 'divide':
-            ans = divide(num1, num2); 
-            display.innerHTML = ans.toPrecision(8);
+            ans = divide(num1, num2).toPrecision(8); 
+            display.innerHTML = parseFloat(ans);
             break; 
         } 
     }
-    //Need to truncate trailing zeroes from the answer, not sure how to do that yet
-    //display.innerHTML = ans.toPrecision(8);
-    console.log(num2);
+
     partialClear()
 
 };
