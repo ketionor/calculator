@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body {
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3em;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+    }
+}
+
 #container {
     padding: .4em;
     display: grid;
@@ -19,9 +43,12 @@
     button {
         width: 100%;
         height: 100%;
-        border-radius: 10%;
+        border-radius: 10px;
         border: none;
-        background-color: salmon;
+        background-color: slategray;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
     }
 
     #clear {
@@ -97,21 +124,24 @@
     }
     width: 250px;
     height: 400px;
-    background-color: mistyrose;
+    background-color: rgba(0, 128, 128, 0.527);
     border-radius: 10px;
 }
 
 #display {
     grid-area: display;
-
-    border: 5px;
-    background-color: lightgray;
-    margin: 10px 10px 10px 10px;
-    vertical-align: center;
+    margin: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
+    border: 5px inset rgba(63, 72, 82, 0.226);
+    border-radius: 10px;
+    
+    background-color: slategray;
     display: flex;
     align-items: center;
-    justify-items: right;
-    border-radius: 10px;
+    justify-content: flex-end;
+
+    font-size: 3em;
+    color: white;
 }
 
 
