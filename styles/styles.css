@@ -25,12 +25,6 @@ body h1 {
   margin-top: 0;
 }
 
-body h2 {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-}
-
 #container {
   padding: .4em;
   display: -ms-grid;
@@ -153,6 +147,9 @@ body h2 {
 }
 
 .signature h2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
   padding-left: 20px;
   line-height: 1.5em;
 }
