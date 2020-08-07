@@ -26,6 +26,7 @@ body {
     padding: .4em;
     display: grid;
     border: 3px solid rgb(177, 177, 177);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -49,6 +50,7 @@ body {
         color: white;
         font-size: 1.5em;
         font-weight: 600;
+        outline: none;
     }
 
     #clear {
@@ -155,15 +157,24 @@ body {
     flex-grow: 1;
 }
 
-button {
-    flex-grow: 1;
-    border-radius: 5px;
-    background-color: lightsteelblue;
-    width: 50px;
-    height: 50px;
-    font-size: large;
-}
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.equals-button {
-    height: 100px;
+    background-color: steelblue;
+
+    img {
+        border-radius: 50%;
+        max-height: 100px;
+    }
+
+    h2 {
+        padding-left: 20px;
+        line-height: 1.5em;
+    }
 }

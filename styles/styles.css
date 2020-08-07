@@ -35,6 +35,8 @@ body h2 {
   display: -ms-grid;
   display: grid;
   border: 3px solid #b1b1b1;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[7];
@@ -56,6 +58,7 @@ body h2 {
   color: white;
   font-size: 1.5em;
   font-weight: 600;
+  outline: none;
 }
 
 #container #clear {
@@ -211,18 +214,31 @@ body h2 {
           flex-grow: 1;
 }
 
-button {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  border-radius: 5px;
-  background-color: lightsteelblue;
-  width: 50px;
-  height: 50px;
-  font-size: large;
+.signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: steelblue;
 }
 
-.equals-button {
-  height: 100px;
+.signature img {
+  border-radius: 50%;
+  max-height: 100px;
+}
+
+.signature h2 {
+  padding-left: 20px;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=styles.css.map */
