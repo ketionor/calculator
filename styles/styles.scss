@@ -13,6 +13,7 @@ body {
         font-size: 3em;
         color: white;
         text-transform: uppercase;
+        margin-top: 0;
     }
 
     h2 {
@@ -32,15 +33,20 @@ body {
     grid-template-rows: repeat(7, 1fr);
     grid-gap: .2em;
     grid-template-areas: 
-        "display    display     display     display"
-        "display    display     display     display"
-        "clear      del         percent     multiply"
-        "seven      eight       nine        add     "
-        "four       five        six         subtract"
-        "one        two         three       calc    "
-        "zero       zero        decimal     calc    "
-        ;
+    "display    display     display     display"
+    "display    display     display     display"
+    "clear      del         percent     multiply"
+    "seven      eight       nine        add     "
+    "four       five        six         subtract"
+    "one        two         three       calc    "
+    "zero       zero        decimal     calc    "
+    ;
 
+    width: 250px;
+    height: 400px;
+    background-color: rgba(0, 128, 128, 0.527);
+    border-radius: 10px;
+    
     button {
         width: 100%;
         height: 100%;
@@ -51,6 +57,16 @@ body {
         font-size: 1.5em;
         font-weight: 600;
         outline: none;
+
+        transition: background-color linear .1s;
+
+        &:hover {
+            background-color: rgb(85, 98, 110);
+        }
+
+        &:active {
+            background-color: rgb(52, 59, 66);
+        }
     }
 
     #clear {
@@ -124,10 +140,7 @@ body {
     #calculate {
         grid-area: calc;
     }
-    width: 250px;
-    height: 400px;
-    background-color: rgba(0, 128, 128, 0.527);
-    border-radius: 10px;
+    
 }
 
 #display {
@@ -161,7 +174,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
     border-radius: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

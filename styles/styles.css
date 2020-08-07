@@ -22,6 +22,7 @@ body h1 {
   font-size: 3em;
   color: white;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 body h2 {
@@ -59,6 +60,16 @@ body h2 {
   font-size: 1.5em;
   font-weight: 600;
   outline: none;
+  -webkit-transition: background-color linear .1s;
+  transition: background-color linear .1s;
+}
+
+#container button:hover {
+  background-color: #55626e;
+}
+
+#container button:active {
+  background-color: #343b42;
 }
 
 #container #clear {
@@ -224,7 +235,7 @@ body h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 20px;
   border-radius: 40px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
