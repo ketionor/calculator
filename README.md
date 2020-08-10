@@ -1,1 +1,8 @@
-I originally wrote this claculator only a month or so into learning web development, and therefore created it with a cery limited set of tools. Now, a while later, I'm going back and changing some things to make this app more presentable. 
+This is a simple calculator that I build to test my skills at implementing logic in JavaScript. I started it a few months ago and never finsished it becuase I was having trouble with the layout. You see, when I first started to learn HTML and CSS I picked up Flexbox pretty early on and just ignored everything else. Flexbox seemed like it could handle anything so why bother with anything else. 
+
+Well, I finally decided to try learning CSS grid, and quickly realized that it would be much more suited to a button layout on a claculator than flexbox would. So, I came back and significantly improved the look and feel of the calculator. The logic remains pretty much unchanged. 
+
+## Challenges
+
+The biggest challenge I faced when creating this app was having to convert back and forth between strings and numbers to perform calculations. I needed strings to update the display, and I needed numbers to perform calculations and othe rmath functions in order to make it look and function like a real calculator. Maybe there is a simpler way, but I'm not aware of it at this time. 
+
