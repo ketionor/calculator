@@ -4,7 +4,7 @@
   "description": "This is a simple calculator that I build to test my skills at implementing logic in JavaScript. I started it a few months ago and never finished it because I was having trouble with the layout. You see, when I first started to learn HTML and CSS I picked up Flexbox pretty early on and just ignored everything else. Flexbox seemed like it could handle anything so why bother with anything else.",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "scripts": {
